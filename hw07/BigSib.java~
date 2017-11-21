@@ -1,0 +1,35 @@
+//Kaitlin Wan
+//APCS1 pd2
+//HW06 - On BigSib Individuality and the Elimination of Radio Fuzz
+//2017-09-25
+
+
+public class BigSib{
+    public String helloMsg = "Hello ";
+
+    public BigSib(String newHello){
+	helloMsg = newHello;
+	
+	
+    }
+
+    public void setHelloMsg(String newMsg){
+	
+	helloMsg = newMsg;
+
+    }
+    
+    public String greet(String name){
+
+	String newString;
+	
+	newString = helloMsg;
+	newString += " ";
+	newString += name;
+
+	return newString;
+
+    } 
+
+
+}
