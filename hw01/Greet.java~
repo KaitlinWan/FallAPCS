@@ -1,0 +1,20 @@
+/*
+Kaitlin Wan
+APCS1 pd2
+HW01 -- SPLASH!
+2017-09-13
+-------------------------------------------------------------- */
+
+
+public class Greet{
+    public static void main(String[] args){
+	System.out.println("No Hablo Queso")}
+}
+
+/*
+
+THIS IS OUR FIRST HOMEWORK :)
+
+Python :
+
+*/

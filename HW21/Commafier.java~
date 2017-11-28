@@ -1,0 +1,34 @@
+//Kaitlin Wan
+//APCS PD2
+//HW21 - KARMACOMMA
+//2017-10-23
+
+public class Commafier{
+    
+    public static String commafyR(int hello){
+	String holder = "";
+	String rtrString = "";
+	if(hello < 100){
+	    holder += hello.toString();
+	}
+	else if ( hello >= 1000){
+	    holder += (hello % 1000).toString(); 
+	}
+
+	rtrString += holder(hello.length()- 3) + commafyR(hello / 1000);
+	return rtrString;
+
+    }
+
+
+    public static String commfyF(int hello){
+
+
+    }
+    
+    public static void main(String[] args){
+
+    }
+
+
+}

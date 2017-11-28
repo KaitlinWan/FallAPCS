@@ -1,0 +1,4 @@
+public class Greet2 {
+    public static void greet(String){
+    }
+}
