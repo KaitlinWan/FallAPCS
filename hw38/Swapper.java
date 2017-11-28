@@ -8,9 +8,16 @@ import cs1.Keyboard;
 
 public class Swapper{
 
+<<<<<<< HEAD
     String[] words = {"cat","dog","rat","bat","cow","hog","fox","bee","pug"};
     String[][] excel = new int[3][3];
 
+=======
+    String[][] words = {{"cat","dog","rat"},{"bat","cow","hog"},{"fox","bee","pug"}};
+   
+    /*
+    public void fillup(){
+>>>>>>> 49268b471d7819c1fdc1c8ab1312585ffbbd6759
     for (int i = 0; i < words.length; i++){
 	for(int r = 0; r < words.length(); r++){
 	    for(int c = 0; c < words[c].length(); c++){
@@ -18,6 +25,7 @@ public class Swapper{
 	    }
 	}
     }
+<<<<<<< HEAD
 
     public void change(int row, int col, int row2, int col2){
 	int HoldA = excel[row][col];
@@ -38,4 +46,36 @@ public class Swapper{
 
     }
 
+=======
+    }
+    */
+    public void change(int row, int col, int row2, int col2){
+	String HoldA = words[row][col];
+	String HoldB = words[row2][col2];
+
+
+	words[row][col] = HoldB;
+	words[row2][row2] = HoldA;
+		    
+    }
+
+    public void printArray( int[][] a )
+    {
+		
+	for(int[] c : a){
+	    for(int x : c){
+		System.out.print(x + " ");
+	    }
+	    System.out.println();
+	}
+    }
+
+    
+    
+    
+    public static void main(String[] args){
+	printArray(words);
+
+    }
+>>>>>>> 49268b471d7819c1fdc1c8ab1312585ffbbd6759
 }
