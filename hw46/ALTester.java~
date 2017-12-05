@@ -1,0 +1,85 @@
+import java.util.ArrayList;
+
+public class ALTester{
+
+
+    public static void randomPop(ArrayList<Comparable> arr,int amount){
+	for(int i = 0; i < amount; i++) {
+			
+	    arr.add((int)(Math.random() * 100));
+	}
+		
+		
+    }
+	
+	
+    public static String printArray(ArrayList<Comparable> arr){
+	String retString = "{";
+	for(int i = 0; i < arr.size(); i++) {
+	    retString += arr.get(i) + ", ";
+	}
+		
+	return retString.substring(0, retString.length() - 2) + "}";
+		
+    }
+	
+    public static boolean isSorted(ArrayList<Comparable> arr) {
+	if(arr.isEmpty()){
+	    return true;}
+		    
+	Comparable x = arr.get(0);
+	System.out.println(x);
+	Comparable y = arr.get(1);
+	System.out.println(y);
+	int base = (x.compareTo(y));
+	System.out.println(base);
+
+	arr.remove(0);
+	return helpisSorted(arr, base);
+    }
+
+    public static boolean helpisSorted(ArrayList<Comparable> arr, int oldBase){
+
+	/*for(int i = 0; i < arr.size() - 1; i++){
+	  Comparable x = arr.get(i);
+	  System.out.println(x);
+	  Comparable y = arr.get(i + 1);
+	  System.out.println(y);
+	  int newBase = (x.compareTo(y));
+	  System.out.println(newBase);
+	  if(newBase != oldBase){
+	  return false;
+	  }
+	  } */
+	if(arr.isEmpty()){
+	    return true;
+	}
+	Comparable x = arr.get(0);
+        System.out.println(x);
+	Comparable y = arr.get(1);
+	System.out.println(y);
+	int base = (x.compareTo(y));
+	System.out.println(base);
+
+      	arr.remove(0);
+	return helpisSorted(arr, base);
+    }
+    
+public static void main(String[] args){
+    /*ArrayList<Comparable> Testing = new ArrayList<>();
+      randomPop(Testing, 23);
+      System.out.println(printArray(Testing));
+      System.out.println(isSorted(Testing)); */
+
+    ArrayList<Comparable> ordered = new ArrayList<>();
+    ordered.add(1);
+    ordered.add(2);
+    ordered.add(3);
+
+    System.out.println(printArray(ordered));
+    System.out.println(isSorted(ordered));
+	
+}
+}
+	
+       
