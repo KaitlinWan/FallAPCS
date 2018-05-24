@@ -1,4 +1,1 @@
-# FallAPCS
-Homework from Fall 2017 APCS
-------------------------------
-!!
+# FallAPCS 2017 Homework
